@@ -12,6 +12,11 @@
             display:flex;
             justify-content:center;
         }*/
+        label{
+            font-family: 'Gotham Rounded';
+            font-size: 20px;
+            font-weight: bold;
+        }
         #message-container{
             width:100%;
             /*max-width:120px;*/
@@ -57,43 +62,6 @@
             border:1px solid black;
             border-radius: 6px;
         }
-        /*#message-container{
-            background-color: gray;
-            margin: 8px;
-            padding:10px;
-            font-weight: bold;
-            font-size: 30px;
-        }
-        #message-container{
-            margin-bottom: 50px;
-        }
-        #message-input , #send-btn{
-            position:relative;
-            top: 500px;
-            border-radius: 6px;
-            margin-bottom: 10px;
-        }
-        #message-input{
-            padding:8px 8px;
-            margin: 10px 10px;
-            border:solid black 1px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 18px;
-            font-weight: 300;
-        }
-        #send-btn{
-            padding:6px 30px;
-            font-weight: bold;
-            font-size: 18px;
-            background-color: gray;
-            border:solid black 1px;
-        }
-        #send-btn:hover{
-            background-color: lightgray;
-        }
-        #send-btn:focus{
-            background-color: gray;
-        }*/
     </style>
     <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
     <script defer src="script.js"></script>
@@ -102,6 +70,7 @@
     <div id="message-container"></div>
     <div id="form-container">
         <form id="send-container">
+            <label for="input">Message:</label>
             <input type="text" id="message-input">
             <button type="submit" id="send-btn">Send</button>
         </form>
